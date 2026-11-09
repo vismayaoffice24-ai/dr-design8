@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact & Book Appointment | Dr. Anil Kumar – Nephrologist Kochi</title>
+  <meta name="description" content="Book an appointment with Dr. Anil Kumar, Kidney Specialist in Edappally, Kochi via WhatsApp or phone. Clinic timings, location, and contact information.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="index.html">
+        <span class="logo-icon">🩺</span>
+        <div>
+          <span>Dr. Anil Kumar</span>
+          <span class="logo-sub">Kidney &amp; Hypertension Clinic</span>
+        </div>
+      </a>
+      <button id="mb" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <nav class="links" id="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="kidney-health.html">Kidney Health</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a class="btn btn-nav" href="contact.html">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="wrap">
+    <div class="crumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span class="current">Contact &amp; Appointments</span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Header Section -->
+    <section class="compact">
+      <div class="wrap">
+        <span class="tag">Appointments &amp; Location</span>
+        <h1 style="font-size: clamp(28px, 4.5vw, 40px); margin: 12px 0 16px;">Clinic Timings &amp; Consultations</h1>
+        <p class="sub" style="font-size: 17px; line-height: 1.6; max-width: 760px;">
+          Prior appointments are recommended to ensure dedicated time for report review and personal discussion. Walk-ins are also accommodated based on clinic flow.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Details & Interactive Appointment Form -->
+    <section style="padding-top: 0;">
+      <div class="wrap two">
+        <!-- Left: Clinic Info & Timings -->
+        <div>
+          <div class="card" style="margin-bottom: 24px; padding: 30px;">
+            <h2 style="font-size: 22px; margin-bottom: 8px;">Clinic Consultation Hours</h2>
+            <p class="sub" style="margin-bottom: 20px;">Edappally, Kochi, Kerala</p>
+            
+            <table class="timings-table">
+              <tr>
+                <td><strong>Monday – Friday</strong></td>
+                <td>
+                  9:00 AM – 1:00 PM<br>
+                  5:00 PM – 8:00 PM
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Saturday</strong></td>
+                <td>9:00 AM – 1:00 PM</td>
+              </tr>
+              <tr>
+                <td><strong>Sunday</strong></td>
+                <td><span style="color: var(--warn); font-weight: 600;">Closed (Emergency Casualty on call)</span></td>
+              </tr>
+            </table>
+
+            <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 15px; line-height: 1.7;">
+              <p style="margin: 0 0 10px;">
+                <strong>📍 Clinic Address:</strong><br>
+                Anil Kumar Kidney Clinic<br>
+                Pipeline Road, Edappally, Kochi, Kerala – 682024
+              </p>
+              <p style="margin: 0 0 10px;">
+                <strong>📞 Phone:</strong> <a href="tel:+919745866333">+91 97458 66333</a>
+              </p>
+              <p style="margin: 0 0 10px;">
+                <strong>💬 WhatsApp:</strong> <a href="https://wa.me/919745866333" target="_blank" rel="noopener">+91 97458 66333 (Direct Chat)</a>
+              </p>
+              <p style="margin: 0;">
+                <strong>✉️ Email:</strong> <a href="mailto:vismaya@stackertec.com">vismaya@stackertec.com</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Google Maps Card -->
+          <div class="card" style="text-align: center; padding: 28px;">
+            <div style="font-size: 42px; margin-bottom: 8px;">🗺️</div>
+            <h3 style="font-size: 19px; margin-bottom: 6px;">Find Us on Google Maps</h3>
+            <p style="color: var(--muted); font-size: 14.5px; margin-bottom: 18px;">
+              Get real-time driving directions, transit routes, and patient reviews on Google.
+            </p>
+            <a class="btn" href="https://share.google/IF2H3o8JMqyeWoSkW" target="_blank" rel="noopener">
+              Open Location in Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: WhatsApp Appointment Form -->
+        <div class="card" style="padding: 32px;">
+          <h2 style="font-size: 22px; margin-bottom: 6px;">Request an Appointment</h2>
+          <p class="sub" style="margin-bottom: 22px; font-size: 14.5px;">
+            Fill in the details below. Clicking the button formats your appointment request and opens it directly in WhatsApp for instant confirmation with our clinic staff.
+          </p>
+
+          <form id="appointment-form" onsubmit="return false;">
+            <div class="form-group">
+              <label for="appt-name">Patient's Full Name *</label>
+              <input type="text" id="appt-name" placeholder="e.g. Rajesh Menon" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appt-phone">Contact Phone Number *</label>
+                <input type="tel" id="appt-phone" placeholder="e.g. +91 98765 43210" required>
+              </div>
+
+              <div class="form-group">
+                <label for="appt-concern">Primary Concern / Service</label>
+                <select id="appt-concern">
+                  <option value="General Kidney Consultation">General Kidney Check-up / Consultation</option>
+                  <option value="Chronic Kidney Disease (CKD)">Chronic Kidney Disease (CKD)</option>
+                  <option value="Dialysis Planning & Care">Dialysis Planning &amp; Care</option>
+                  <option value="Kidney Stones">Kidney Stones (Nephrolithiasis)</option>
+                  <option value="Hypertension & High BP">Hypertension &amp; High Blood Pressure</option>
+                  <option value="Diabetic Kidney Disease">Diabetic Kidney Disease</option>
+                  <option value="Kidney Transplant Care">Kidney Transplant Evaluation / Follow-up</option>
+                  <option value="Protein or Blood in Urine">Protein or Blood in Urine (Nephrotic)</option>
+                  <option value="Second Opinion on Lab Reports">Second Opinion on Creatinine / Lab Reports</option>
+                  <option value="Other Renal Concern">Other Concern</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appt-date">Preferred Date</label>
+                <input type="date" id="appt-date">
+              </div>
+
+              <div class="form-group">
+                <label for="appt-time">Preferred Time Slot</label>
+                <select id="appt-time">
+                  <option value="Morning (9:00 AM – 1:00 PM)">Morning: 9:00 AM – 1:00 PM</option>
+                  <option value="Evening (5:00 PM – 8:00 PM)">Evening: 5:00 PM – 8:00 PM</option>
+                  <option value="Any Available Slot">Any Available Slot</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="appt-notes">Brief Medical Notes or Symptoms (Optional)</label>
+              <textarea id="appt-notes" placeholder="e.g. Current creatinine is 1.8, history of high BP for 5 years, experiencing ankle swelling."></textarea>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <a class="btn btn-wa" id="wa-submit" href="https://wa.me/919745866333" target="_blank" rel="noopener" style="width: 100%; font-size: 16px; padding: 14px;">
+                <svg viewBox="0 0 24 24" style="width: 22px; height: 22px; fill: currentColor;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.05 7.42C8.87 7.42 8.57 7.49 8.32 7.76C8.07 8.03 7.36 8.7 7.36 10.05C7.36 11.4 8.35 12.7 8.49 12.88C8.63 13.07 10.42 15.82 13.16 17C15.44 17.98 15.9 17.78 16.39 17.74C16.88 17.69 17.96 17.09 18.18 16.46C18.4 15.84 18.4 15.3 18.34 15.19C18.27 15.08 18.09 15.02 17.82 14.88C17.54 14.75 16.19 14.09 15.94 14C15.69 13.91 15.51 13.86 15.33 14.14C15.14 14.41 14.61 15.08 14.45 15.26C14.29 15.45 14.13 15.47 13.85 15.33C13.58 15.2 12.69 14.9 11.64 13.97C10.82 13.24 10.27 12.34 10.11 12.07C9.95 11.79 10.1 11.64 10.24 11.51C10.36 11.39 10.51 11.2 10.65 11.04C10.79 10.88 10.84 10.76 10.93 10.58C11.02 10.4 10.97 10.24 10.9 10.11C10.84 9.97 10.28 8.6 10.05 8.05C9.82 7.51 9.59 7.59 9.42 7.58C9.26 7.58 9.07 7.42 9.05 7.42Z"/></svg>
+                Send Appointment Request on WhatsApp
+              </a>
+            </div>
+
+            <!-- WhatsApp Message Preview -->
+            <div class="form-preview" id="wa-preview-box">
+              <strong style="color: var(--text); display: block; margin-bottom: 4px;">WhatsApp Message Preview:</strong>
+              <div id="wa-preview-text" style="white-space: pre-line; font-family: monospace; font-size: 12.5px;">
+                Fill in your details above to preview your WhatsApp booking message.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Note -->
+    <section class="compact" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="urgent">
+          <b>Emergency Medical Disclaimer:</b> If you are suffering from severe breathing distress, intense chest pressure, total cessation of urine, continuous vomiting, or severe confusion, please do not wait for an outpatient appointment response. Call <strong>108</strong> immediately or report directly to the nearest hospital casualty emergency room.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Dr. Anil Kumar – Nephrologist</h4>
+          <p>Consultant Nephrologist &amp; Hypertension Specialist dedicated to providing compassionate, evidence-based kidney care in Kochi, Kerala.</p>
+          <p style="margin-top: 12px; font-size: 13px; color: var(--muted);">
+            Kerala Medical Council Reg. No: 00000<br>
+            Member, Indian Society of Nephrology (ISN)
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Doctor</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="kidney-health.html">Kidney Health Guide</a></li>
+            <li><a href="contact.html">Book Appointment &amp; Timings</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Clinic Contact</h5>
+          <p style="margin: 0 0 8px;">📍 Anil Kumar Kidney Clinic, Pipeline Road, Edappally, Kochi, Kerala</p>
+          <p style="margin: 0 0 8px;">📞 <a href="tel:+919745866333">+91 97458 66333</a></p>
+          <p style="margin: 0 0 8px;">💬 <a href="https://wa.me/919745866333" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+          <p style="margin: 0;">✉️ <a href="mailto:vismaya@stackertec.com">vismaya@stackertec.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Dr. Anil Kumar · Anil Kumar Kidney Clinic, Edappally, Kochi. All rights reserved.</p>
+        <p style="font-size: 12.5px; margin-top: 4px; opacity: 0.85;">Information provided on this website is for general educational awareness and should not replace clinical diagnosis or treatment by a qualified medical professional.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- WhatsApp Floating Quick Button -->
+  <a class="wa-float" href="https://wa.me/919745866333?text=Hello%20Dr.%20Anil%20Kumar%2C%20I%20would%20like%20to%20inquire%20about%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.05 7.42C8.87 7.42 8.57 7.49 8.32 7.76C8.07 8.03 7.36 8.7 7.36 10.05C7.36 11.4 8.35 12.7 8.49 12.88C8.63 13.07 10.42 15.82 13.16 17C15.44 17.98 15.9 17.78 16.39 17.74C16.88 17.69 17.96 17.09 18.18 16.46C18.4 15.84 18.4 15.3 18.34 15.19C18.27 15.08 18.09 15.02 17.82 14.88C17.54 14.75 16.19 14.09 15.94 14C15.69 13.91 15.51 13.86 15.33 14.14C15.14 14.41 14.61 15.08 14.45 15.26C14.29 15.45 14.13 15.47 13.85 15.33C13.58 15.2 12.69 14.9 11.64 13.97C10.82 13.24 10.27 12.34 10.11 12.07C9.95 11.79 10.1 11.64 10.24 11.51C10.36 11.39 10.51 11.2 10.65 11.04C10.79 10.88 10.84 10.76 10.93 10.58C11.02 10.4 10.97 10.24 10.9 10.11C10.84 9.97 10.28 8.6 10.05 8.05C9.82 7.51 9.59 7.59 9.42 7.58C9.26 7.58 9.07 7.42 9.05 7.42Z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
